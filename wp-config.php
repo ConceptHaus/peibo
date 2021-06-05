@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'peibo' );
 
 /** MySQL database username */
-define( 'DB_USER', 'forge' );
+define( 'DB_USER', 'peibo' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'ipJlBz5ays4ho80oULXY' );
+define( 'DB_PASSWORD', 'o49f136e2lapcql09pg5' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
