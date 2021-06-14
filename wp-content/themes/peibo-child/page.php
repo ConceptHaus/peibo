@@ -13,33 +13,23 @@
  */
 
 get_header();
-?>
 
-		<?php
+       
 		while ( have_posts() ) :
 			the_post();
+
+
+			$post_id = get_the_ID();
+			$dish_meta = get_post_meta( $post_id, 'dish_meta', true );
+			$drink_meta = get_post_meta( $post_id, 'drink_meta', true );
+			
 
 			get_template_part( 'template-parts/content', 'page' );
 
 		endwhile; // End of the loop.
-		?>
 
 
 
-		<div class="container-fluid">
-		    <!-- Control the column width, and how they should appear on different devices -->
-		    <div class="row">
-		      <div class="col-sm-6 justify-content-center">
-		            <h1>La forma más fácil y segura de manejar tu dinero </h1>
-		            <hr/>
-		            <p>Solicita tu tarjeta desde la app y disfruta de todas las ventajas que tiene para ti, sin comisiones y sin anualidades.</p>
-
-		      </div>
-		      <div class="col-sm-6  justify-content-center">
-		      		<img src="/" alt="Peibo">
-		      </div>
-		    </div>
-		</div>
-
-<?php
 get_footer();
+
+?>

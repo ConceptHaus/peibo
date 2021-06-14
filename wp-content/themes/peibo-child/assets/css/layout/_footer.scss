@@ -4,8 +4,7 @@
 
 .g-footer {
   width: 100%; height: auto;  padding: 45px 0 40px 0; margin: 0; z-index: 4; 
-  background: -prefix-linear-gradient(top, $col, $col1);
-background: linear-gradient(to bottom, $col, $col1); border-top: 1px solid $col; z-index: -1;
+  border: none; background-color: $colorFooter;
   hr {
     border-top: rgba($col8, 0.50) solid 1px; width: 100%; margin-top: 20px; margin-bottom: 20px;
   }

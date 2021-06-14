@@ -9,12 +9,14 @@ body{
   font-family: $sofiaRegular;
 }
 .g-header {
-  width: 100%; height: auto; @include position(fixed, 0 null null 0); padding: 10px 0; margin: 0;  z-index: 100;@include transition(transform 200ms ease, all 0.25s); @include display(flex);
-  &.activeHead {
-    background-color: none; top: 0;
+  width: 100%; height: auto; @include position(fixed, 0 null null 0); padding: 10px 0; margin: 0;  z-index: 100;@include transition(transform 200ms ease, all 0.25s); @include display(flex); box-shadow: none;
+ &.activeHead {
+    background-color: $white !important; top: 0;
+    -webkit-box-shadow: -1px 13px 35px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 13px 35px -8px rgba(0,0,0,0.75);
+    box-shadow: -1px 13px 35px -8px rgba(0,0,0,0.75);
   }
 }
-
 .listHeader{
   list-style:none;
   width:100%;
@@ -33,6 +35,9 @@ body{
       padding: 0;
 
     }
+    .imgHeader{
+        margin-top: -5%;
+      }
   }
 }
 
