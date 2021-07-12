@@ -16,7 +16,7 @@ get_header();
 ?>
 
 
- <div class="container-fluid bgsSection1 ">
+ <div class="container-fluid bgsSectionEmpresas ">
           <!-- Control the column width, and how they should appear on different devices -->
           <section class="container mt-1">
             <div class="row">
@@ -53,11 +53,11 @@ get_header();
                 <div class="row">
                   <div class="col-sm-4  columnSection2 empresas">
                     <div class="row">
-                      <div class="col-sm-12 d-flex justify-content-center">
+                      <div class="col-sm-12 d-flex justify-content-center d-flex contentICon">
                         <img class="iconSection animate__animated animate__bounce animate__delay-4s animate__p" src="/wp-content/themes/peibo-child/assets/img/icons/cash.png" alt="Peibo" />
                       </div>
-                      <div class="col-sm-12 text-center">
-                        <ul>
+                      <div class="col-sm-12 d-flex justify-content-center  text-center">
+                        <ul class="pl-0">
                           <li>
                             <h3>Cash Management.</h3>
                           </li>
@@ -71,11 +71,11 @@ get_header();
                   </div>
                   <div class="col-sm-4 columnSection2 empresas">
                     <div class="row">
-                      <div class="col-sm-12 d-flex justify-content-center">
+                      <div class="col-sm-12 d-flex justify-content-center contentICon">
                           <img class="iconSection" src="/wp-content/themes/peibo-child/assets/img/icons/credit.png" alt="Peibo" />
                         </div>
-                        <div class="col-sm-12 text-center">
-                          <ul>
+                        <div class="col-sm-12 d-flex justify-content-center text-center">
+                          <ul class="pl-0">
                             <li>
                               <h3>Tarjeta Nómina.</h3>
                             </li>
@@ -89,13 +89,13 @@ get_header();
 
                     <div class="col-sm-4 columnSection2 empresas">
                     <div class="row">
-                      <div class="col-sm-12 d-flex justify-content-center">
+                      <div class="col-sm-12 d-flex justify-content-center d-flex contentICon">
                           <img class="iconSection" src="/wp-content/themes/peibo-child/assets/img/icons/ejecutiva.png" alt="Peibo" />
                         </div>
-                        <div class="col-sm-12 text-center">
-                          <ul>
+                        <div class="col-sm-12 d-flex justify-content-center  text-center">
+                          <ul class="pl-0">
                             <li>
-                              <h3>Tarejta Ejecutiva.</h3>
+                              <h3>Tarjeta Ejecutiva.</h3>
                             </li>
                             <li>
                               <label>Administra los gastos empresariales de tus empleados a través de la Tarjeta Ejecutiva, con la que podrán realizar pagos y disposición de efectivo fácilmente.</label>
@@ -112,95 +112,129 @@ get_header();
           </section>
 
 <section class="mask">
-  <img class="mask" src="/wp-content/themes/peibo-child/assets/img/curva3.png" alt="Peibo" />
     
-  <div class="container-fluid d-flex justify-content-center sectionTar">
+  <div class="container-fluid d-flex justify-content-center sectionTar empresas">
     <div class="row container">
-        <div class="col-sm-4 d-flex justify-content-center" >
-          <img class="iconTar" src="/wp-content/themes/peibo-child/assets/img/digital.png" alt="Peibo" />
-        </div>
-        <div class="col-sm-3 d-flex justify-content-center contCvv" >
-          <!--<img class="" src="/wp-content/themes/peibo-child/assets/img/cvv.png" alt="Peibo" width="100%" height="40%" />-->
-          <small>CVV</small>
-          <h1 class="cvvGene">140</h1>
-        </div>
-        <div class="col-sm-5 d-flex justify-content-center contCvv" >
+        <div class="col-sm-6 d-flex justify-content-center" >
           <div class="row">
-            <ul>
-              <li>
-                <h3>Haz compras en línea de manera segura.</h3>
-              </li>
-              <li>                  
-                <label>Hazlo con tu tarjeta digítal y CVV dinámico.</label>
-              </li>
+          <div class=" col-sm-12 d-flex">
+            <p>
+              <span class="titleCash">Cash Management.</span>
+              <span class="parCash">
+                Actualmente, más de 10,000 empresas y corporativos usan nuestra plataforma de Cash Management, la cual está construida con las mejores herramientas para agilizar tu negocio.
+              </span>
+            </p>
+          </div>
+          <div class=" col-sm-12 d-flex">
+            <ul class="listTarEmpresas">
+              <li>- Dispersión masiva de pagos.</li>
+              <li>- Tesorería global.</li>
+              <li>- Administración de múltiples usuarios en la misma cuenta.</li>
+              <li>- Servicio 24/7.</li>
             </ul>
           </div>
+        </div>
+          
+        </div>
+        <div class="col-sm-6 d-flex justify-content-center texy-center" >
+          <img class="" src="/wp-content/themes/peibo-child/assets/img/empresas/Pantalla2.png" width="90%" alt="Peibo" />
         </div>
     </div>
   </div>
 
   <div class="container-fluid d-flex justify-content-center sectionStores">    
-    <div class="row container">
-      <div class="col-sm-12 d-flex justify-content-center contCvv" > 
-          <h3><strong>Descarga la app</strong> y abre tu cuenta hoy mismo.</h3>
-      </div>
-      <div class="col-sm-12 d-flex justify-content-center contCvv">
-        <ul>
-          <li>
-            <img class="iconTar" src="/wp-content/themes/peibo-child/assets/img/btnPlayStore.png" alt="Peibo" />
-          </li>
-          <li>                  
-            <img class="iconTar" src="/wp-content/themes/peibo-child/assets/img/btnAppStore.png" alt="Peibo" />
-          </li>
-        </ul>
+    <div class="container-fluid">
+      <!-- Control the column width, and how they should appear on different devices -->
+      <div class="row">
+        <div class="col-sm-6" >
+          <img class="" src="/wp-content/themes/peibo-child/assets/img/empresas/Credit_Card_Mockup2.png" width="90%" alt="Peibo" />
+        </div>
+        <div class="col-sm-6" >
+          <div class="row">
+          <div class=" col-sm-12 d-flex">
+            <p>
+              <span class="titleNomina">Tarjeta Nómina.</span>
+              <span class="parNomina">
+                Creamos una tarjeta de débito perfecta para tu negocio. La Tarjeta Nómina es la manera más fácil de pagar la nómina de tus empleados. Se puede administrar desde la app móvil para lograr una experiencia fluida, segura e intuitiva.
+              </span>
+              <span class="parNomina parNomina2">
+                Aprovecha todos los beneficios y paquetes asistenciales que ofrece la tarjeta:
+              </span>
+            </p>
+          </div>
+          <div class=" col-sm-12 d-flex">
+            <div class="container-fluid">
+              <!-- Control the column width, and how they should appear on different devices -->
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul class="listTarEmpresas coloBlack">
+                    <li>Asistencia Médica</li>
+                    <li>Asistencia Psicológica</li>
+                    <li>Asistencia Nutricional</li>
+                    <li>Asistencia del Hogar</li>
+                    <li>Asistencia Vial</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul class="listTarEmpresas coloBlack">
+                    <li>Asistencia Legal</li>
+                    <li>Asistencia Funeraria</li>
+                    <li>Asistencia Mascota</li>
+                    <li>Compra Protegida</li>
+                    <li>Garantía Extendida</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+            
+          </div>
+        </div>
+        </div>
       </div>
     </div>
   </div>
+
+
 </section>
 
 <div style="padding: 0% !important; margin: 0% !important;">
-<section class="mask2">
-  <img class="mask2" src="/wp-content/themes/peibo-child/assets/img/curva4.png" alt="Peibo" />    
-  <div class="container-fluid d-flex justify-content-center ">
-    <div class="row container">
-        <div class="col-sm-12 d-flex justify-content-center" >
-          <h2>¿Quiénes <strong>somos?</strong></h2>
-        </div> 
-        <div class="col-sm-11 d-flex justify-content-center mt-5 text-center mb-4 offset-sm-1" >
-          <p>
-            Es muy importante para nosotros construir una empresa con valores que estén alineados con el escenario actual en el mundo, por ello, mantener la seguridad y privacidad de tu cuenta es nuestra máxima prioridad. 
-          </p>
-        </div> 
-
-        <div class="col-sm-9 d-flex justify-content-start offset-sm-4 mt-3 mb-3" >
-          <h4>Somos una mpresa 100% mexicana.</h4>
-        </div> 
-        <div class="col-sm-8 d-flex justify-content-start offset-sm-4 mt-4 mb-5" >
-          <p>
-            Apoyamos la inclusión financiera y sabemos cómo afecta de manera positvia a la calidad de vida de las personas.
-          </p>
-        </div>                
-    </div>
-  </div>
+<section class="mask2 empresas">
+  <img class="mask2" src="/wp-content/themes/peibo-child/assets/img/empresas/viaje.png" alt="Peibo" />    
+  
         
-  <div class="container-fluid d-flex justify-content-center sectionQueremos ">
+  <div class="container-fluid d-flex justify-content-left sectionQueremos empresas ">
     
     <div class="row container">
         <div class="col-sm-8 d-flex justify-content-start offset-sm-2 mt-5" > 
-            <h3>Queremos diseñar y ofrecer productos que fomenten tu salud financiera y bienestar.</h3>
+            <h3>Tarjeta Ejecutiva</h3>
         </div>
         <div class="col-sm-8 d-flex justify-content-start offset-sm-2 mt-4 mb-4" > 
-            <p>También nos enorgullece decirte que somos una SOFIPO regulada por la CNBV para que tengas la tranquilidad de que tu dinero está protegido por el gobierno mexicano y está a tu alcance en todo momento.</p>
+            <p>Administra el saldo de esta tarjeta desde tu cuenta empresarial para que tus empleados puedan pagar viáticos, viajes o cualquier gasto que requieras en tu negocio.</p>
+        </div>
+        <div class="col-sm-8 d-flex justify-content-start offset-sm-2 mt-4 mb-4" > 
+            <p>Ofrece a tus empleados un paquete de asistencias especializadas para viajes de negocio .</p>
+        </div>
+        <div class="col-sm-8 d-flex justify-content-start offset-sm-2 mt-4 mb-4" > 
+          <ul class="listEmpresas">
+            <li>
+            Asistencia de Viaje</li>
+            <li>
+            Asistencia Vial</li>
+            <li>
+            Red de Descuentos en renta de autos, hoteles y boletos de avión</li>
+          </ul>
         </div>
     </div>
   </div>
   <div class="container-fluid d-flex justify-content-center sectionEresEmp">
     
     <div class="row container">
-      <div class="col-sm-9 d-flex justify-content-center offset-sm-2 mt-3" > 
+      <div class="col-sm-12 d-flex justify-content-center  mt-3" > 
           <h2 class="empresas">¿Buscas una tarjeta personal?</h2>
       </div>
-      <div class="col-sm-8 d-flex justify-content-center offset-sm-2 mb-5 mt-4 " > 
+      <div class="col-sm-12 d-flex justify-content-center offset-sm-0 mb-5 mt-4 " > 
           <a class="btnMoreInfEmpresa" href="#">más información &nbsp;<i class="fa fa-angle-right"></i></a>
       </div>
         
