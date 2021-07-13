@@ -11,7 +11,7 @@
  *
  * @package Equality_Child
  */
-/* Template Name: empresas */
+/* Template Name: empresas  */
 get_header();
 ?>
 
