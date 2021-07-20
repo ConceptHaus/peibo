@@ -70,9 +70,10 @@ article {
 
   h1{
     font-family: $sofiaBold;
-    font-size: 3.4em;
-    letter-spacing: 3px;
-    font-weight: revert;
+    font-size: 2.7em;
+    text-align: center;
+    width: 85%;
+    padding-top: 5%;
   }
   label,p{
     font-family: $sofiaRegular;
@@ -89,17 +90,20 @@ article {
       font-size: 1.3em !important;
       letter-spacing: 1px;
       font-weight: lighter;
+      text-align: center;
+      padding: 7% 4%;
     }
   }
 
   ul{
     list-style: none;
+    margin-left: -30%;
     li{
         float: left !important;
-        margin: 0 -3% !important;
+        margin: 0% !important;
         padding-top: 4%;
       img{
-        width: 70%  !important;
+        width: 140px  !important;
         position: inherent !important;
       }
     }
@@ -132,25 +136,35 @@ background-position-x: -10%;
 .section2{
   background: rgba(255, 255, 255, 0.8);
   border-radius: 25px;
-  padding: 7% 1%;
+  padding: 25% 1%;
   -webkit-box-shadow: 0px 1px 25px 4px #b0aeb0;
   box-shadow: 0px 1px 25px 4px #b0aeb0;
   height: 60vh !important;
+  width: 90%;
+margin-left: -10% !important;
 
 }
 .columnSection2{
-  height: auto;
+.row{
+  .col-sm-3{
+    text-align: center;
+    margin: 2% 0%;
+  }
+}
+  height: auto !important;
   padding-bottom: 5%;
     div> div>img.iconSection{
-      width: 100%;
+      width: 20%;
     }
     ul{
       list-style: none;
       h3{
         color: $purple;
-        font-size: 1.5em;
+        font-size: 1em;
+        text-align: center;
+        padding-top: 5%;
         letter-spacing: 2px;
-        font-family: $sofiaRegular;
+        font-family: $sofiaBold;
         font-weith: bold;
         white-space: pre-wrap;
       }
@@ -1062,12 +1076,11 @@ margin: 5% 0%;
     a img.alignleft {float:left; margin:0 1em 1em 0}
     a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
   }
-  @media all and (min-width: 768px) {
-    padding: 70px 0;
-    & .rte {
-      margin: 40px 0 0;
-    }
-  }
+
+
+
+
+
   @media all and (min-width: 992px) {
     padding: 80px 0;
     & .rte {
@@ -1129,6 +1142,11 @@ margin: 5% 0%;
   }
   @media all and (min-width: 768px) {
     margin: 0 auto;
+
+
+
+
+
   }
   @media all and (min-width: 992px) {
     width: 320px; height: 320px;
@@ -1256,3 +1274,111 @@ margin: 5% 0%;
   //   height: 100vh;
   // }
 }
+
+
+
+
+
+
+
+  /* estilos desktop */
+  @media all and (min-width: 768px) {
+    
+
+
+    .bgsSection1{
+      
+      h1{
+        font-size: 3.4em !important;
+        text-align: left;
+        width: 100%;
+        padding-top: 0%;
+      }
+      label,p{
+        font-family: $sofiaRegular;  
+        font-size: 12px;
+      }
+      .noMargin{
+        margin:0%;
+        padding: 0%;
+        hr.hr{
+          border-top: 5px solid $aqua;
+          width: 100%;
+        }
+        label{
+          font-size: 1.3em !important;
+          letter-spacing: 1px;
+          font-weight: lighter;
+          text-align: left !important;
+          padding: 0% !important;
+        }
+      }
+
+      ul{
+        list-style: none;
+        margin-left: 0;
+        li{
+            float: left !important;
+            margin: 0 -3% !important;
+            padding-top: 4%;
+          img{
+            width: 70%  !important;
+            position: inherent !important;
+          }
+        }
+      }
+      
+
+      img.celular{
+        width: 150% !important;
+        position: absolute;
+        right: -22%;
+      }
+
+    }
+
+
+    .section2{
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 25px;
+        padding: 7% 1%;
+        -webkit-box-shadow: 0px 1px 25px 4px #b0aeb0;
+        box-shadow: 0px 1px 25px 4px #b0aeb0;
+        height: 60vh !important;
+
+      }
+    .columnSection2{
+      .row{
+        .col-sm-3{
+          text-align: left !important;
+          margin: 0% !important;
+        }
+      }
+        height: auto;
+        padding-bottom: 5%;
+          div> div>img.iconSection{
+            width: 100%;
+          }
+          ul{
+            list-style: none;
+            h3{
+              color: $purple;
+              font-size: 1.5em !important;
+              letter-spacing: 2px;
+              font-family: $sofiaRegular;
+              font-weith: bold;
+              white-space: pre-wrap;
+            }
+            label{
+              color: $letterColor;
+            }
+          }
+        }
+
+
+
+
+
+  }
+
+/* end estilos desktop */

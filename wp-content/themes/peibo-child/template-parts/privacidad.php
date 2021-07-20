@@ -17,7 +17,7 @@ get_header();
 
 
  
- <div class="container-fluid page-privacidad  mt-5 pt-5">
+ <div class="container-fluid page-privacidad bgsSectionGeneric mt-5 pt-5">
     <!-- Control the column width, and how they should appear on different devices -->
     <section class="container">
       <div class="row d-flex justify-content-center">

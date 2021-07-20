@@ -27,7 +27,7 @@
 
     <!-- Header -->
     <header id="headerGeneral" class="g-header" data-blur-content>
-      <div class="container-fluid">
+      <div class="container-fluid d-none d-sm-none d-md-block">
           <div class="row justify-content-between d-flex">
             <div class="col-sm-4">
               <ul class="listHeader">
@@ -50,13 +50,31 @@
                     <a href="/personal#ContentContacto">contacto</a>
                   </li>
                   <li>
-                    <a href="#">sing in</a>
+                    <a href="#">sign in</a>
                   </li>
                   <li>
-                    <a href="#" class="btnSing">sing up</a>
+                    <a href="#" class="btnSing">sign up</a>
                   </li>
                 </ul>
 
+            </div>
+          </div>
+      </div>
+      <div class="container-fluid d-block d-sm-block d-md-none">
+        <div class="row ">
+            <div class="col-sm-12">
+              <ul class="listHeaderMobile">
+                  <li>
+                    <a href="/">
+                      <img src="/wp-content/themes/peibo-child/assets/img/logos/logoHeader.png" width="50%" class="imgHeader" />
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </li>
+                </ul>
             </div>
           </div>
       </div>

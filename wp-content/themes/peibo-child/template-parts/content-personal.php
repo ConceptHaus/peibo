@@ -22,8 +22,10 @@ get_header();
             <div class="row">
               <div class="col-sm-6 mt-5 justify-content-center d-flex">
                 <div class="row">
-                  <h1 class="animate__animated animate__bounce animate__delay-1s animate__fadeInLeftBig">La forma más fácil y segura de manejar tu dinero.</h1>
-                  <div class="col-6 noMargin">
+                  <div class="col-12 noMargin">
+                    <h1 class="animate__animated animate__bounce animate__delay-1s animate__fadeInLeftBig">La forma más fácil y segura de manejar tu dinero.</h1>
+                  </div>
+                  <div class="col-6 noMargin d-none d-sm-block">
                     <hr class="hr animate__animated animate__bounce animate__delay-1s animate__fadeInLeftBig" />
                   </div>
                   <div class="col-10 noMargin">
