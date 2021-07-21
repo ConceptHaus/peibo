@@ -1285,6 +1285,9 @@ margin: 5% 0%;
   @media all and (min-width: 768px) {
     
 
+    .bgsSection1 {
+        height: 110vh;
+    }
 
     .bgsSection1{
       
@@ -1344,7 +1347,9 @@ margin: 5% 0%;
         padding: 7% 1%;
         -webkit-box-shadow: 0px 1px 25px 4px #b0aeb0;
         box-shadow: 0px 1px 25px 4px #b0aeb0;
-        height: 60vh !important;
+        height: 50vh !important;
+        margin-left: 0% !important;
+        text-aling : left;
 
       }
     .columnSection2{
@@ -1368,6 +1373,7 @@ margin: 5% 0%;
               font-family: $sofiaRegular;
               font-weith: bold;
               white-space: pre-wrap;
+              text-align: left !important;
             }
             label{
               color: $letterColor;
@@ -1375,6 +1381,9 @@ margin: 5% 0%;
           }
         }
 
+        .listSociales{
+          margin-left: -15% ;
+        }
 
 
 
@@ -1382,3 +1391,16 @@ margin: 5% 0%;
   }
 
 /* end estilos desktop */
+
+
+@media all and (min-width: 1200px) {
+    
+    .bgsSection1 {
+        height: 105vh;
+    }
+
+
+   .listSociales{
+          margin-left: -12% !important;
+        }
+ }

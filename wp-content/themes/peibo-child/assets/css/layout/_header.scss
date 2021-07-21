@@ -17,6 +17,26 @@ body{
     box-shadow: -1px 13px 35px -8px rgba(0,0,0,0.75);
   }
 }
+
+.menuDesMobile{
+  background-color: #2E3649;
+  border-radius: 0px 0px 30px 30px;
+  position: absolute;
+  z-index: 200;
+  min-height: 90vh;
+  max-width: 80%;
+  right: 0;
+  top: 0;
+}
+
+.menu-none{
+  display: none !important;
+}
+
+.menu-open{
+  display: block !important;
+}
+
 .listHeader{
 
   list-style:none;
@@ -128,6 +148,9 @@ padding-top: 5%;
     }
   }
   @media all and (min-width: 768px) {
+
+    
+
     a {
 			padding: 0 25px;
       &:last-child {
@@ -199,3 +222,29 @@ padding-top: 5%;
     padding: 0 20px;
   }
 }
+
+
+
+
+
+/* estilos desktop */
+@media all and (min-width: 768px) {
+  
+
+  .listHeader{
+    li{
+      a.btnSing{
+        padding: 2% 0 0 0;
+
+      }
+    }
+  }
+
+
+}
+
+/* end estilos desktop */
+
+
+@media all and (min-width: 1200px) {
+ }

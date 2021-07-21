@@ -60,18 +60,18 @@
             </div>
           </div>
       </div>
-      <div class="container-fluid d-block d-sm-block d-md-none">
+      <div class="container-fluid d-block d-sm-block d-md-none ">
         <div class="row ">
             <div class="col-sm-12">
               <ul class="listHeaderMobile">
-                  <li>
-                    <a href="/">
+                  <li class="">
+                    <a class="">
                       <img src="/wp-content/themes/peibo-child/assets/img/logos/logoHeader.png" width="50%" class="imgHeader" />
                     </a>
                   </li>
                   <li>
                     <a>
-                      <i class="fa fa-bars"></i>
+                      <i class="fa fa-bars iconHambur"></i>
                     </a>
                   </li>
                 </ul>
@@ -79,6 +79,11 @@
           </div>
       </div>
     </header>
+
+    <div class="menuDesMobile  d-block d-sm-block d-md-none container-fluid menu-none">
+      <div class="col-sm-12">
+      </div>
+    </div>
     
     <!-- Main -->
     <main class="PageContainer mt-2" data-blur-content>

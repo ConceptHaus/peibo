@@ -627,6 +627,25 @@ body {
   box-shadow: -1px 13px 35px -8px rgba(0, 0, 0, 0.75);
 }
 
+.menuDesMobile {
+  background-color: #2E3649;
+  border-radius: 0px 0px 30px 30px;
+  position: absolute;
+  z-index: 200;
+  min-height: 90vh;
+  max-width: 80%;
+  right: 0;
+  top: 0;
+}
+
+.menu-none {
+  display: none !important;
+}
+
+.menu-open {
+  display: block !important;
+}
+
 .listHeader {
   list-style: none;
   width: 100%;
@@ -648,6 +667,35 @@ body {
 }
 .listHeader li .imgHeader {
   margin-top: -5%;
+}
+
+.listHeaderMobile {
+  padding-top: 5%;
+  list-style: none;
+  width: 100%;
+}
+.listHeaderMobile li {
+  margin-left: 0% !important;
+  float: left;
+}
+.listHeaderMobile li i {
+  font-size: 2.5em;
+}
+.listHeaderMobile li i:hover {
+  cursor: pointer;
+}
+
+.bgsSectionGeneric {
+  padding-top: 9%;
+  background-image: url("../img//empresas/icon-empresas.png"), url("../img//empresas/icon-empresas.png") !important;
+  background-color: transparent;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 110%;
+  min-height: 120vh;
+  background-position-y: 185%;
+  background-position-x: 177%;
 }
 
 .brand {
@@ -910,6 +958,13 @@ body.is-preload .btnNav {
   }
 }
 
+/* estilos desktop */
+@media all and (min-width: 768px) {
+  .listHeader li a.btnSing {
+    padding: 2% 0 0 0;
+  }
+}
+/* end estilos desktop */
 /* ==|====================
    Layout/Nav
    ======================= */
@@ -1350,9 +1405,10 @@ article {
 }
 .bgsSection1 h1 {
   font-family: "sofiaBold", Helvetica, Arial, sans-serif;
-  font-size: 3.4em;
-  letter-spacing: 3px;
-  font-weight: revert;
+  font-size: 2.7em;
+  text-align: center;
+  width: 85%;
+  padding-top: 5%;
 }
 .bgsSection1 label, .bgsSection1 p {
   font-family: "sofiaRegular", Helvetica, Arial, sans-serif;
@@ -1370,17 +1426,20 @@ article {
   font-size: 1.3em !important;
   letter-spacing: 1px;
   font-weight: lighter;
+  text-align: center;
+  padding: 7% 4%;
 }
 .bgsSection1 ul {
   list-style: none;
+  margin-left: -30%;
 }
 .bgsSection1 ul li {
   float: left !important;
-  margin: 0 -3% !important;
+  margin: 0% !important;
   padding-top: 4%;
 }
 .bgsSection1 ul li img {
-  width: 70% !important;
+  width: 140px !important;
   position: inherent !important;
 }
 .bgsSection1 img.celular {
@@ -1405,27 +1464,35 @@ article {
 .section2 {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 25px;
-  padding: 7% 1%;
+  padding: 25% 1%;
   -webkit-box-shadow: 0px 1px 25px 4px #b0aeb0;
   box-shadow: 0px 1px 25px 4px #b0aeb0;
   height: 60vh !important;
+  width: 90%;
+  margin-left: -10% !important;
 }
 
 .columnSection2 {
-  height: auto;
+  height: auto !important;
   padding-bottom: 5%;
 }
+.columnSection2 .row .col-sm-3 {
+  text-align: center;
+  margin: 2% 0%;
+}
 .columnSection2 div > div > img.iconSection {
-  width: 100%;
+  width: 20%;
 }
 .columnSection2 ul {
   list-style: none;
 }
 .columnSection2 ul h3 {
   color: #5A58C4;
-  font-size: 1.5em;
+  font-size: 1em;
+  text-align: center;
+  padding-top: 5%;
   letter-spacing: 2px;
-  font-family: "sofiaRegular", Helvetica, Arial, sans-serif;
+  font-family: "sofiaBold", Helvetica, Arial, sans-serif;
   font-weith: bold;
   white-space: pre-wrap;
 }
@@ -2691,14 +2758,6 @@ body.is-preload .bannerInt > .titleInt {
   margin-left: auto;
   margin-right: auto;
 }
-@media all and (min-width: 768px) {
-  .contGeneric {
-    padding: 70px 0;
-  }
-  .contGeneric .rte {
-    margin: 40px 0 0;
-  }
-}
 @media all and (min-width: 992px) {
   .contGeneric {
     padding: 80px 0;
@@ -3088,6 +3147,108 @@ body.is-preload .bannerInt > .titleInt {
   }
 }
 
+/* estilos desktop */
+@media all and (min-width: 768px) {
+  .bgsSection1 {
+    height: 110vh;
+  }
+
+  .bgsSection1 h1 {
+    font-size: 3.4em !important;
+    text-align: left;
+    width: 100%;
+    padding-top: 0%;
+  }
+  .bgsSection1 label, .bgsSection1 p {
+    font-family: "sofiaRegular", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+  }
+  .bgsSection1 .noMargin {
+    margin: 0%;
+    padding: 0%;
+  }
+  .bgsSection1 .noMargin hr.hr {
+    border-top: 5px solid #00DCDA;
+    width: 100%;
+  }
+  .bgsSection1 .noMargin label {
+    font-size: 1.3em !important;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    text-align: left !important;
+    padding: 0% !important;
+  }
+  .bgsSection1 ul {
+    list-style: none;
+    margin-left: 0;
+  }
+  .bgsSection1 ul li {
+    float: left !important;
+    margin: 0 -3% !important;
+    padding-top: 4%;
+  }
+  .bgsSection1 ul li img {
+    width: 70% !important;
+    position: inherent !important;
+  }
+  .bgsSection1 img.celular {
+    width: 150% !important;
+    position: absolute;
+    right: -22%;
+  }
+
+  .section2 {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    padding: 7% 1%;
+    -webkit-box-shadow: 0px 1px 25px 4px #b0aeb0;
+    box-shadow: 0px 1px 25px 4px #b0aeb0;
+    height: 50vh !important;
+    margin-left: 0% !important;
+    text-aling: left;
+  }
+
+  .columnSection2 {
+    height: auto;
+    padding-bottom: 5%;
+  }
+  .columnSection2 .row .col-sm-3 {
+    text-align: left !important;
+    margin: 0% !important;
+  }
+  .columnSection2 div > div > img.iconSection {
+    width: 100%;
+  }
+  .columnSection2 ul {
+    list-style: none;
+  }
+  .columnSection2 ul h3 {
+    color: #5A58C4;
+    font-size: 1.5em !important;
+    letter-spacing: 2px;
+    font-family: "sofiaRegular", Helvetica, Arial, sans-serif;
+    font-weith: bold;
+    white-space: pre-wrap;
+    text-align: left !important;
+  }
+  .columnSection2 ul label {
+    color: #2E3649;
+  }
+
+  .listSociales {
+    margin-left: -15%;
+  }
+}
+/* end estilos desktop */
+@media all and (min-width: 1200px) {
+  .bgsSection1 {
+    height: 105vh;
+  }
+
+  .listSociales {
+    margin-left: -12% !important;
+  }
+}
 /* ==|====================
    Layout/Footer
    ======================= */

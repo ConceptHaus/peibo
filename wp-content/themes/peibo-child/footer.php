@@ -115,6 +115,19 @@
                 $(".g-header").removeClass("activeHead");
               }
             });
+
+            $(".iconHambur").click(function(){
+              if($(".menuDesMobile").hasClass("menu-none") == true){
+                $(".menuDesMobile").show("slow").removeClass("menu-none");
+              }
+              else{
+                if($(".menuDesMobile").hasClass("menu-open") == true){
+                  $(".menuDesMobile").hide("slow").removeClass("menu-open");
+                }
+              }
+
+            });
+
         });
         </script>
 
