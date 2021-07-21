@@ -81,7 +81,32 @@
     </header>
 
     <div class="menuDesMobile  d-block d-sm-block d-md-none container-fluid menu-none">
-      <div class="col-sm-12">
+      <div class="contentCloseMobile">
+        <img src="/wp-content/themes/peibo-child/assets/img/iconClose.svg" class="iconCloseMobile">
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-sm-12">
+          <ul>
+            <li>
+              <a href="/personal">personal <i class="fa fa-chevron-right"></i></a>
+            </li>
+            <li>
+              <a href="/empresas">empresas <i class="fa fa-chevron-right"></i></a>
+            </li>
+            <li>
+              <hr class="menuMolbileHr" />
+            </li>
+            <li>
+              <a href="/personal#ContentContacto">contacto <i class="fa fa-chevron-right"></i></a>
+            </li>
+            <li>
+              <a href="#">sign in <i class="fa fa-chevron-right"></i></a>
+            </li>
+            <li>
+              <a href="#" class="btnSing">sign up</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     

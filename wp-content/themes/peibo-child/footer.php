@@ -118,14 +118,25 @@
 
             $(".iconHambur").click(function(){
               if($(".menuDesMobile").hasClass("menu-none") == true){
-                $(".menuDesMobile").show("slow").removeClass("menu-none");
+                $(".menuDesMobile").show("slow").removeClass("menu-none").addClass("menu-open");
               }
               else{
                 if($(".menuDesMobile").hasClass("menu-open") == true){
-                  $(".menuDesMobile").hide("slow").removeClass("menu-open");
+                  $(".menuDesMobile").hide("slow").removeClass("menu-open").addClass("menu-none");
                 }
               }
 
+            });
+
+            $(".iconCloseMobile").click(function(){
+              if($(".menuDesMobile").hasClass("menu-none") == true){
+                $(".menuDesMobile").show("slow").removeClass("menu-none").addClass("menu-open");
+              }
+              else{
+                if($(".menuDesMobile").hasClass("menu-open") == true){
+                  $(".menuDesMobile").hide("slow").removeClass("menu-open").addClass("menu-none");
+                }
+              }
             });
 
         });

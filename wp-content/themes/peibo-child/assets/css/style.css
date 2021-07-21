@@ -637,6 +637,61 @@ body {
   right: 0;
   top: 0;
 }
+.menuDesMobile .contentCloseMobile {
+  color: white;
+  padding: 5%;
+  position: absolute;
+  right: 7%;
+  top: 7%;
+}
+.menuDesMobile .contentCloseMobile img {
+  width: 100%;
+}
+.menuDesMobile .contentCloseMobile img:hover {
+  cursor: pointer;
+}
+.menuDesMobile .row {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.menuDesMobile .row ul {
+  list-style: none;
+  width: 150%;
+}
+.menuDesMobile .row ul li {
+  margin: 15% 0% !important;
+}
+.menuDesMobile .row ul li a {
+  color: white;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  font-family: "sofiaRegular", Helvetica, Arial, sans-serif;
+}
+.menuDesMobile .row ul li a i {
+  position: absolute;
+  right: 0% !important;
+  vertical-align: middle;
+  display: inline;
+  margin-top: 4%;
+}
+.menuDesMobile .row ul li a.btnSing {
+  width: 120px;
+  height: 40px;
+  color: white;
+  background-color: #5A58C4;
+  text-align: center;
+  display: block;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 30% !important;
+}
+.menuDesMobile .row ul li hr {
+  color: white;
+  border-top: 2px solid white;
+  width: 40% !important;
+  margin: 3rem 0% !important;
+}
 
 .menu-none {
   display: none !important;

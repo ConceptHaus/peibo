@@ -27,7 +27,69 @@ body{
   max-width: 80%;
   right: 0;
   top: 0;
+
+  .contentCloseMobile{
+      color: white;
+      padding: 5%;
+      position: absolute;
+      right: 7%;
+      top: 7%;
+      img{
+        width: 100%;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+
+    }
+
+  .row{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+
+    ul{
+      list-style: none;
+      width: 150%;
+      li{
+      margin: 15% 0% !important;
+        a{
+          color: white;
+          font-size: 1.3em;
+          letter-spacing: 1px;
+          font-family: $sofiaRegular;
+          i{
+            position: absolute;
+            right: 0% !important;
+            vertical-align: middle;
+            display: inline;
+            margin-top: 4%;
+          }
+        }
+
+        a.btnSing {
+            width: 120px;
+            height: 40px;
+            color: white;
+            background-color: #5A58C4;
+            text-align: center;
+            display: block;
+            border-radius: 10px;
+            padding: 5px;
+            margin-top: 30% !important;
+        }
+        hr{
+          color: white;
+          border-top: 2px solid white;
+          width: 40% !important;
+          margin: 3rem 0% !important;
+        }
+      }
+    }
+  }
 }
+
+
 
 .menu-none{
   display: none !important;
