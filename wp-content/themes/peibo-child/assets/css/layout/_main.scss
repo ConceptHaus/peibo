@@ -16,6 +16,8 @@ main {
   width: 100%; height: auto; position: relative; padding: 0; margin: 0; z-index: 3;
   &.PageContainer {
     min-height: 100vh; @include display(flex); @include flex-direction(column); @include flex-wrap(wrap);
+    overflow-y: hidden;
+overflow-x: hidden;
   }
 }
 article {
@@ -56,18 +58,9 @@ article {
 // Sections
 
 .bgsSection1{
-  padding-top: 9%;
-  background-image:  url("#{$imgR}curva0.png"),
-                     url("#{$imgR}curva0.png") !important;
-  background-color: transparent;
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: right;
-  width: 110%;
-  height: 95vh;
-  background-position-y: 100%;
-  background-position-x: 110%;
-
+  
+  padding-left: 12% !important;
+padding-top: 11%;
   h1{
     font-family: $sofiaBold;
     font-size: 2.7em;
@@ -111,9 +104,10 @@ article {
   
 
   img.celular{
-    width: 150% !important;
+    width: 200% !important;
     position: absolute;
-    right: -22%;
+    right: -30%;
+    z-index:1;
   }
 
 }
@@ -122,15 +116,13 @@ article {
   background-image:  url("#{$imgR}curva2.png"),
                      url("#{$imgR}curva2.png") !important;
   background-color: transparent;
-  background-size: 31%;
 background-repeat: no-repeat;
 background-position: left;
 height: 95vh;
-background-position-y: 100%;
-background-position-x: -10%;
-
-  z-index: 2;
   position: relative;
+  background-size: 80%;
+  background-position-y: -10%;
+  background-position-x: -190%;
 }
 
 .section2{
@@ -200,6 +192,21 @@ margin-left: -10% !important;
   }
 
 }
+
+
+.contentContacto{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-left: 0% !important;
+  padding: 4% !important;
+
+}
+
+form.contentFrm{
+  text-aling:center !important;
+}
+
 .sectionTar{
   
   background-color: $bgsSection;
@@ -242,16 +249,37 @@ margin-left: -10% !important;
     }
 
     h1.cvvGene{
-  color: $azulitoBajito;
-   font-size: 8em; 
-   font-family: $sofiaBold;
-   letter-spacing: 2px;
-   margin-left: 4%;
-position: absolute;
-right: 0%;
-  }
+      color: $azulitoBajito;
+       font-size: 8em; 
+       font-family: $sofiaBold;
+       letter-spacing: 2px;
+       margin-left: 4%;
+      position: relative;
+      right: 0%;
+    }
   }
   
+}
+
+
+.flex {
+  display: flex;
+}
+
+.flex > * {
+  order: 0;
+}
+
+.uno {
+ order: 1;
+}
+
+.dos {
+ order: 2;
+}
+
+.tres {
+ order: 3;
 }
 
 
@@ -418,6 +446,9 @@ right: 0%;
 .bgsImgContact{
       margin: 0% !important;
       padding: 0% !important;
+      img{
+        width: 100%;
+      }
     }
 
 
@@ -425,19 +456,109 @@ right: 0%;
 
 /* *************   Page privacy           ********************** */
 
- .page-privacidad{
-    h1{
-      font-family: $sofiaBold;
-      font-size: 3em;
-      letter-spacing: 2px;
-    }
+.contentInformativaText{
+  display: flex;
+}
 
-    p{
-      font-family: $sofiaRegular;
-      font-size: 1em;
-      letter-spacing: 2px;
-    }
+.customPadding{
+  padding-left: 8% !important;
+}
+
+.contCabeceraInfo {
+    background-image: url("../img/cabeceraInformativa.png"), url("../img/cabeceraInformativa.png") !important;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 30vh;
+    position: relative;
+    background-size: 200%;
+}
+
+ .page-privacidad{
+
+        margin-right: 0px !important;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+          h1{
+            font-family: $sofiaBold;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            margin-left: 2%;
+          }
+
+          p{
+
+            font-family: $sofiaRegular;
+            font-size: 1em;
+            letter-spacing: 2px;
+          }
+
+          img{
+            text-align: center !important;
+            margin: 10% 0%;
+            width: 100%;
+          }
+          label{
+              font-style: italic;
+              font-weight: lighter;
+              letter-spacing: 1px;
+              font-family: $sofiaRegular;
+              margin-left: 2% !important;
+
+          }
+       }
+
+ .maskLegales{
+    background-image:  url("#{$imgR}curva5.png"),
+                       url("#{$imgR}curva5.png") !important;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 60vh;
+    position: absolute;
+    background-size: 40%;
+    background-position-y: 155%;
+    width: 100%;
+    background-position-x: 100% !important;
+
  }
+
+ .maskEmpresas{
+
+    background-image:  url("#{$imgR}empresas/viaje.png"),
+                       url("#{$imgR}empresas/viaje.png") !important;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 60vh;
+    position: absolute;
+    background-size: 40%;
+    background-position-y: 155%;
+    width: 50%;
+    background-position-x: 100% !important;
+ }
+
+
+
+
+ 
+
+  .maskLegalesBottom{
+    background-image:  url("#{$imgR}curva0.png"),
+                       url("#{$imgR}curva0.png") !important;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 60vh;
+position: absolute;
+background-size: 100%;
+background-position-y: 75%;
+width: 100%;
+background-position-x: 88%;
+left: 35%;
+ }
+
+
+
+
+ 
 
 /* *************  end Page privacy           ********************** */
 
@@ -1283,9 +1404,112 @@ margin: 5% 0%;
 
   /* estilos desktop */
   @media all and (min-width: 768px) {
+
+    .maskTerminos{
+      background-image:  url("#{$imgR}curva7.png"),
+                         url("#{$imgR}curva7.png") !important;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      height: 90vh;
+      position: absolute;
+      background-size: 36%;
+      background-position-y: 30%;
+      width: 100%;
+      background-position-x: 100% !important;
+
+   }
+
+    .maskLegalesMiddle{
+    background-image:  url("#{$imgR}curva6.png"),
+                       url("#{$imgR}curva6.png") !important;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: absolute;
+    background-size: 30%;
+    background-position-y: 70%;
+    width: 100%;
+    background-position-x: -15% !important;
+
+ }
+
+ .maskLegalesBottom{
+    background-image:  url("#{$imgR}curva0.png"),
+                       url("#{$imgR}curva0.png") !important;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 40vh;
+    position: absolute;
+    background-size: 35%;
+    background-position-y: 35%;
+    width: 100%;
+    background-position-x: 115% !important;
+    z-index: 10 !important;
+    margin-bottom: 5%;
+    left: inherit;
+ }
+    .page-privacidad{
+
+  margin-right: 0px !important;
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+        h1{
+          font-family: $sofiaBold;
+          font-size: 3em;
+          letter-spacing: 2px;
+        }
+
+        p{
+
+          font-family: $sofiaRegular;
+          font-size: 1em;
+          letter-spacing: 2px;
+        }
+
+        img{
+          text-align: center;
+          margin: 5% 0%;
+          width: 70%;
+        }
+        label{
+            font-style: italic;
+            font-weight: lighter;
+            letter-spacing: 1px;
+            font-family: $sofiaRegular;
+
+        }
+     }
+
+    .customPadding{
+      padding-left: inherit !important;
+    }
     
+    .preSection{
+
+      background-size: 31%;
+      background-repeat: no-repeat;
+      background-position: left;
+      height: 95vh;
+      background-position-y: 100%;
+      background-position-x: -10%;
+
+        z-index: 2;
+        position: relative;
+    }
 
     .bgsSection1 {
+    padding-left: inherit !important;
+    padding-top: 9%;
+    background-image:  url("#{$imgR}curva0.png"),
+                       url("#{$imgR}curva0.png") !important;
+    background-color: transparent;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 110%;
+    height: 95vh;
+    background-position-y: 100%;
+    background-position-x: 110%;
         height: 110vh;
     }
 
@@ -1336,6 +1560,7 @@ margin: 5% 0%;
         width: 150% !important;
         position: absolute;
         right: -22%;
+        z-index: inherit;
       }
 
     }
@@ -1385,6 +1610,96 @@ margin: 5% 0%;
           margin-left: -15% ;
         }
 
+
+
+
+        .bgsImgContact{
+          margin: 0% !important;
+          padding: 0% !important;
+          img{
+            width: 110%;
+          }
+        }
+
+
+        .sectionTar{
+  
+          background-color: $bgsSection;
+          min-height: 50vh;
+          padding: 3%;
+          img.iconTar{
+            width: 100% !important;
+          }
+
+          .contCvv{
+          small{
+          color: $azulitoBajito;
+           font-size: 2em; 
+           font-family: $sofiaBold;
+           letter-spacing: 2px;
+           display: inline;
+            position: absolute;
+            left: -30px;
+            top: 37%;
+         }
+            padding-top: 10%;
+            h3, label{
+              color: $white;
+              
+            }
+            h3{
+              font-size: 2.3em;
+              letter-spacing: 2px;
+              font-family: $sofiaBold;
+            }
+            label{
+              margin-top: 3%;
+              letter-spacing: 2px;
+              font-family: $sofiaRegular;
+              font-weight: lighter;
+              font-size: 18px; 
+            }
+            div>ul{
+              list-style: none;
+            }
+
+            h1.cvvGene{
+              color: $azulitoBajito;
+               font-size: 8em; 
+               font-family: $sofiaBold;
+               letter-spacing: 2px;
+               margin-left: 4%;
+              position: absolute;
+              right: 0%;
+            }
+          }
+          
+        }
+
+        .uno {
+         order: 2;
+        }
+
+        .dos {
+         order: 3;
+        }
+
+        .tres {
+         order: 1;
+        }
+
+
+
+        .contCabeceraInfo{
+            background-image:  url("#{$imgR}cabeceraInformativa.png"),
+                               url("#{$imgR}cabeceraInformativa.png") !important;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: unset;
+            height: 60vh;
+            position: relative;
+            background-size: 100%;
+          }
 
 
 

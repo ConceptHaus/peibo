@@ -29,16 +29,16 @@
     <header id="headerGeneral" class="g-header" data-blur-content>
       <div class="container-fluid d-none d-sm-none d-md-block">
           <div class="row justify-content-between d-flex">
-            <div class="col-sm-4">
+            <div class="col-sm-5">
               <ul class="listHeader">
                   <li>
                     <a href="/personal">
                       <img src="/wp-content/themes/peibo-child/assets/img/logos/logoHeader.png" width="70%" class="imgHeader" />
                     </a>
                   </li>
-                  <li>
+                  <!--<li>
                     <a href="/personal">personal</a>
-                  </li>
+                  </li>-->
                   <li>
                     <a href="/empresas">empresas</a>
                   </li>
@@ -87,9 +87,9 @@
       <div class="row d-flex justify-content-center">
         <div class="col-sm-12">
           <ul>
-            <li>
+            <!--<li>
               <a href="/personal">personal <i class="fa fa-chevron-right"></i></a>
-            </li>
+            </li>-->
             <li>
               <a href="/empresas">empresas <i class="fa fa-chevron-right"></i></a>
             </li>

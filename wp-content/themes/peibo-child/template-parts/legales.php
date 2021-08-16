@@ -18,18 +18,34 @@ get_header();
 
  
  <div class="container-fluid page-privacidad  mt-5 pt-5">
+  <div class="contCabeceraInfo container-fluid"></div>
     <!-- Control the column width, and how they should appear on different devices -->
+    <div class=" maskLegalesMiddle"></div>
     <section class="container">
-      <div class="row d-flex justify-content-center">
+      <div class=" maskLegales"></div>
+
+      <div class="row d-flex justify-content-center customPadding">
         <div class="col-sm-10">
           
           <div class="row mt-5 mb-5">
-            <h1>legales</h1>
+            <h1>Lorem ipsum dolor sit amet</h1>
+
+            <div class="row col-md-12">
+              <label>April 19, 2021</label>
+            </div>
           </div>
-          <div class="row">
+          <div class="row pb-5 col-md-12 contentInformativaText">
             <p>              
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisl ex, mollis ut semper non, egestas id dui. Sed consequat bibendum sodales. Integer rhoncus euismod semper. Phasellus leo augue, placerat nec augue interdum, gravida elementum felis. Maecenas nec ante varius, luctus diam ac, venenatis orci. Aenean porttitor tempor eleifend. Sed ipsum ligula, pellentesque ac orci ut, pellentesque finibus felis. Aenean sit amet mi sed ipsum rutrum sagittis.
             </p>
+            <p>
+              Etiam arcu nulla, molestie in facilisis sed, suscipit vitae felis. Proin id arcu accumsan, ultrices orci quis, vulputate elit. Vestibulum vulputate neque vitae eros auctor, scelerisque efficitur ligula semper. Mauris egestas, augue eget semper efficitur, nibh elit suscipit elit, in hendrerit quam urna imperdiet augue. Mauris rhoncus ipsum eu tempus faucibus. Sed est odio, viverra a ante id, tristique tincidunt neque. Ut non lectus lectus.
+            </p>
+
+              <div class="row text-center d-flex justify-content-center col-md-12">
+                <img src="/wp-content/themes/peibo-child/assets/img/informativas/cuerpoLegales.png">
+              </div>
+            
             <p>
               Etiam arcu nulla, molestie in facilisis sed, suscipit vitae felis. Proin id arcu accumsan, ultrices orci quis, vulputate elit. Vestibulum vulputate neque vitae eros auctor, scelerisque efficitur ligula semper. Mauris egestas, augue eget semper efficitur, nibh elit suscipit elit, in hendrerit quam urna imperdiet augue. Mauris rhoncus ipsum eu tempus faucibus. Sed est odio, viverra a ante id, tristique tincidunt neque. Ut non lectus lectus.
             </p>
@@ -44,6 +60,8 @@ get_header();
       <br>
     </section>
   </div>
+
+  <div class=" maskLegalesBottom"></div>
 
 
 <?php

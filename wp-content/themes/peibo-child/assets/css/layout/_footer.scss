@@ -4,6 +4,7 @@
 
 .g-footer {
   width: 100%; height: auto;  padding: 45px 0 40px 0; margin: 0; z-index: 4; 
+  margin-bottom: -1% !important;
   border: none; background-color: $colorFooter;
   hr {
     border-top: rgba($col8, 0.50) solid 1px; width: 100%; margin-top: 20px; margin-bottom: 20px;
@@ -41,15 +42,25 @@
             color: $white;
         }
       }
+      img.imgFooterLogo{
+        width: 15%;
+        margin-bottom: 3%;
+      }
     }
 }
 
 .listSociales{
   list-style: none;
+  margin-left: -4%;
+  margin-top: 2%;
   li{
     float: left;
     margin: 0%;
   }
+}
+
+.conMEnuFooter{
+  margin-top:4%;
 }
 
 .menuGenFooter {
@@ -129,5 +140,30 @@
   }
   @media all and (min-width: 556px) {
     margin: 0 0 20px;
+  }
+}
+
+
+
+/* estilos desktop */
+@media all and (min-width: 768px) {
+
+  .listFooter{
+    li{
+      label{
+        color: $white;
+      }
+      a{
+        
+      }
+      img.imgFooterLogo{
+        width: 35%;
+      }
+    }
+  }
+
+  .listSociales{
+    margin-left: -4%;
+    margin-top: 2%;
   }
 }

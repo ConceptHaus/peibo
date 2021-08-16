@@ -1,6 +1,4 @@
 
-          </div>
-        </main><!-- end.Main -->
 
         <!-- footer -->
         <footer class="g-footer" data-blur-content>
@@ -9,12 +7,10 @@
               <div class="col-sm-4">
                 <ul class="listFooter">
                   <li>
-                    <img src="/wp-content/themes/peibo-child/assets/img/logos/LOGO.png" width="35%">
+                    <img src="/wp-content/themes/peibo-child/assets/img/logos/LOGO.png" class="imgFooterLogo">
                   </li>
                   <li>
-                    <label>
-                    Bosques de las Lomas, CDMX
-                  </label>
+                    <label>Bosques de las Lomas, CDMX</label>
                   </li>
                   <li>
                     <a href="tel:+5212345678">T. 12.34.56.78</a>
@@ -40,7 +36,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-sm-4">
+              <div class="col-sm-4 conMEnuFooter">
                   <ul class="listFooter">
                     <li>
                       <a href="/personal">Personal</a>
@@ -72,9 +68,9 @@
         
         <?php wp_footer(); ?>
 
-        <script>
+        <script> 
           $('body').show();
-          // $('.version').text(NProgress.version);
+          // $('.version').text(NProgress.version);  
           NProgress.start();
           setTimeout(function () {
             NProgress.done();

@@ -590,6 +590,10 @@ h6 {
 /* ==|====================
    Layout/Header
    ======================= */
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-image: url("../img//background.jpg"), url("../img//background.jpg") !important;
   background-color: transparent;
@@ -630,7 +634,7 @@ body {
 .menuDesMobile {
   background-color: #2E3649;
   border-radius: 0px 0px 30px 30px;
-  position: absolute;
+  position: fixed;
   z-index: 200;
   min-height: 90vh;
   max-width: 80%;
@@ -674,6 +678,9 @@ body {
   vertical-align: middle;
   display: inline;
   margin-top: 4%;
+}
+.menuDesMobile .row ul li a:hover {
+  color: #00DCDA;
 }
 .menuDesMobile .row ul li a.btnSing {
   width: 120px;
@@ -1384,6 +1391,8 @@ main.PageContainer {
   box-lines: multiple;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 article {
@@ -1447,16 +1456,8 @@ article {
 }
 
 .bgsSection1 {
-  padding-top: 9%;
-  background-image: url("../img/curva0.png"), url("../img/curva0.png") !important;
-  background-color: transparent;
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: right;
-  width: 110%;
-  height: 95vh;
-  background-position-y: 100%;
-  background-position-x: 110%;
+  padding-left: 12% !important;
+  padding-top: 11%;
 }
 .bgsSection1 h1 {
   font-family: "sofiaBold", Helvetica, Arial, sans-serif;
@@ -1498,22 +1499,22 @@ article {
   position: inherent !important;
 }
 .bgsSection1 img.celular {
-  width: 150% !important;
+  width: 200% !important;
   position: absolute;
-  right: -22%;
+  right: -30%;
+  z-index: 1;
 }
 
 .preSection {
   background-image: url("../img/curva2.png"), url("../img/curva2.png") !important;
   background-color: transparent;
-  background-size: 31%;
   background-repeat: no-repeat;
   background-position: left;
   height: 95vh;
-  background-position-y: 100%;
-  background-position-x: -10%;
-  z-index: 2;
   position: relative;
+  background-size: 80%;
+  background-position-y: -10%;
+  background-position-x: -190%;
 }
 
 .section2 {
@@ -1581,6 +1582,22 @@ article {
   width: 50%;
 }
 
+.contentContacto {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 0% !important;
+  padding: 4% !important;
+}
+
+form.contentFrm {
+  text-aling: center !important;
+}
+
 .sectionTar {
   background-color: #2E3649;
   min-height: 50vh;
@@ -1626,8 +1643,38 @@ article {
   font-family: "sofiaBold", Helvetica, Arial, sans-serif;
   letter-spacing: 2px;
   margin-left: 4%;
-  position: absolute;
+  position: relative;
   right: 0%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex > * {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+.uno {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.dos {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.tres {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 
 .sectionStores {
@@ -1786,17 +1833,95 @@ article {
   margin: 0% !important;
   padding: 0% !important;
 }
+.bgsImgContact img {
+  width: 100%;
+}
 
 /* *************   Page privacy           ********************** */
+.contentInformativaText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.customPadding {
+  padding-left: 8% !important;
+}
+
+.contCabeceraInfo {
+  background-image: url("../img/cabeceraInformativa.png"), url("../img/cabeceraInformativa.png") !important;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 30vh;
+  position: relative;
+  background-size: 200%;
+}
+
+.page-privacidad {
+  margin-right: 0px !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
 .page-privacidad h1 {
   font-family: "sofiaBold", Helvetica, Arial, sans-serif;
-  font-size: 3em;
+  font-size: 2.5em;
   letter-spacing: 2px;
+  margin-left: 2%;
 }
 .page-privacidad p {
   font-family: "sofiaRegular", Helvetica, Arial, sans-serif;
   font-size: 1em;
   letter-spacing: 2px;
+}
+.page-privacidad img {
+  text-align: center !important;
+  margin: 10% 0%;
+  width: 100%;
+}
+.page-privacidad label {
+  font-style: italic;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-family: "sofiaRegular", Helvetica, Arial, sans-serif;
+  margin-left: 2% !important;
+}
+
+.maskLegales {
+  background-image: url("../img/curva5.png"), url("../img/curva5.png") !important;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  height: 60vh;
+  position: absolute;
+  background-size: 40%;
+  background-position-y: 155%;
+  width: 100%;
+  background-position-x: 100% !important;
+}
+
+.maskEmpresas {
+  background-image: url("../img/empresas/viaje.png"), url("../img/empresas/viaje.png") !important;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  height: 60vh;
+  position: absolute;
+  background-size: 40%;
+  background-position-y: 155%;
+  width: 50%;
+  background-position-x: 100% !important;
+}
+
+.maskLegalesBottom {
+  background-image: url("../img/curva0.png"), url("../img/curva0.png") !important;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  height: 60vh;
+  position: absolute;
+  background-size: 100%;
+  background-position-y: 75%;
+  width: 100%;
+  background-position-x: 88%;
+  left: 35%;
 }
 
 /* *************  end Page privacy           ********************** */
@@ -3204,7 +3329,99 @@ body.is-preload .bannerInt > .titleInt {
 
 /* estilos desktop */
 @media all and (min-width: 768px) {
+  .maskTerminos {
+    background-image: url("../img/curva7.png"), url("../img/curva7.png") !important;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: absolute;
+    background-size: 36%;
+    background-position-y: 30%;
+    width: 100%;
+    background-position-x: 100% !important;
+  }
+
+  .maskLegalesMiddle {
+    background-image: url("../img/curva6.png"), url("../img/curva6.png") !important;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: absolute;
+    background-size: 30%;
+    background-position-y: 70%;
+    width: 100%;
+    background-position-x: -15% !important;
+  }
+
+  .maskLegalesBottom {
+    background-image: url("../img/curva0.png"), url("../img/curva0.png") !important;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 40vh;
+    position: absolute;
+    background-size: 35%;
+    background-position-y: 35%;
+    width: 100%;
+    background-position-x: 115% !important;
+    z-index: 10 !important;
+    margin-bottom: 5%;
+    left: inherit;
+  }
+
+  .page-privacidad {
+    margin-right: 0px !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .page-privacidad h1 {
+    font-family: "sofiaBold", Helvetica, Arial, sans-serif;
+    font-size: 3em;
+    letter-spacing: 2px;
+  }
+  .page-privacidad p {
+    font-family: "sofiaRegular", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    letter-spacing: 2px;
+  }
+  .page-privacidad img {
+    text-align: center;
+    margin: 5% 0%;
+    width: 70%;
+  }
+  .page-privacidad label {
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-family: "sofiaRegular", Helvetica, Arial, sans-serif;
+  }
+
+  .customPadding {
+    padding-left: inherit !important;
+  }
+
+  .preSection {
+    background-size: 31%;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 95vh;
+    background-position-y: 100%;
+    background-position-x: -10%;
+    z-index: 2;
+    position: relative;
+  }
+
   .bgsSection1 {
+    padding-left: inherit !important;
+    padding-top: 9%;
+    background-image: url("../img/curva0.png"), url("../img/curva0.png") !important;
+    background-color: transparent;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 110%;
+    height: 95vh;
+    background-position-y: 100%;
+    background-position-x: 110%;
     height: 110vh;
   }
 
@@ -3250,6 +3467,7 @@ body.is-preload .bannerInt > .titleInt {
     width: 150% !important;
     position: absolute;
     right: -22%;
+    z-index: inherit;
   }
 
   .section2 {
@@ -3293,6 +3511,91 @@ body.is-preload .bannerInt > .titleInt {
   .listSociales {
     margin-left: -15%;
   }
+
+  .bgsImgContact {
+    margin: 0% !important;
+    padding: 0% !important;
+  }
+  .bgsImgContact img {
+    width: 110%;
+  }
+
+  .sectionTar {
+    background-color: #2E3649;
+    min-height: 50vh;
+    padding: 3%;
+  }
+  .sectionTar img.iconTar {
+    width: 100% !important;
+  }
+  .sectionTar .contCvv {
+    padding-top: 10%;
+  }
+  .sectionTar .contCvv small {
+    color: #33B8F5;
+    font-size: 2em;
+    font-family: "sofiaBold", Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+    display: inline;
+    position: absolute;
+    left: -30px;
+    top: 37%;
+  }
+  .sectionTar .contCvv h3, .sectionTar .contCvv label {
+    color: #ffffff;
+  }
+  .sectionTar .contCvv h3 {
+    font-size: 2.3em;
+    letter-spacing: 2px;
+    font-family: "sofiaBold", Helvetica, Arial, sans-serif;
+  }
+  .sectionTar .contCvv label {
+    margin-top: 3%;
+    letter-spacing: 2px;
+    font-family: "sofiaRegular", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+  }
+  .sectionTar .contCvv div > ul {
+    list-style: none;
+  }
+  .sectionTar .contCvv h1.cvvGene {
+    color: #33B8F5;
+    font-size: 8em;
+    font-family: "sofiaBold", Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+    margin-left: 4%;
+    position: absolute;
+    right: 0%;
+  }
+
+  .uno {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .dos {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .tres {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .contCabeceraInfo {
+    background-image: url("../img/cabeceraInformativa.png"), url("../img/cabeceraInformativa.png") !important;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: unset;
+    height: 60vh;
+    position: relative;
+    background-size: 100%;
+  }
 }
 /* end estilos desktop */
 @media all and (min-width: 1200px) {
@@ -3313,6 +3616,7 @@ body.is-preload .bannerInt > .titleInt {
   padding: 45px 0 40px 0;
   margin: 0;
   z-index: 4;
+  margin-bottom: -1% !important;
   border: none;
   background-color: #2E3649;
 }
@@ -3358,13 +3662,23 @@ body.is-preload .bannerInt > .titleInt {
   text-decoration: none;
   color: #ffffff;
 }
+.listFooter li img.imgFooterLogo {
+  width: 15%;
+  margin-bottom: 3%;
+}
 
 .listSociales {
   list-style: none;
+  margin-left: -4%;
+  margin-top: 2%;
 }
 .listSociales li {
   float: left;
   margin: 0%;
+}
+
+.conMEnuFooter {
+  margin-top: 4%;
 }
 
 .menuGenFooter {
@@ -3641,6 +3955,20 @@ body.is-preload .bannerInt > .titleInt {
   }
 }
 
+/* estilos desktop */
+@media all and (min-width: 768px) {
+  .listFooter li label {
+    color: #ffffff;
+  }
+  .listFooter li img.imgFooterLogo {
+    width: 35%;
+  }
+
+  .listSociales {
+    margin-left: -4%;
+    margin-top: 2%;
+  }
+}
 /* Modules */
 .boxThumbServicios {
   width: 100%;

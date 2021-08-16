@@ -1,6 +1,9 @@
 /* ==|====================
    Layout/Header
    ======================= */
+   html{
+    overflow-x: hidden;
+   }
 body{
   background-image:  url("#{$imgR}/background.jpg"),
                      url("#{$imgR}/background.jpg") !important;
@@ -21,7 +24,7 @@ body{
 .menuDesMobile{
   background-color: #2E3649;
   border-radius: 0px 0px 30px 30px;
-  position: absolute;
+  position: fixed;
   z-index: 200;
   min-height: 90vh;
   max-width: 80%;
@@ -64,6 +67,9 @@ body{
             vertical-align: middle;
             display: inline;
             margin-top: 4%;
+          }
+          &:hover{
+            color: #00DCDA;
           }
         }
 

@@ -27,7 +27,7 @@ get_header();
                     <hr class="hr animate__animated animate__bounce animate__delay-1s animate__fadeInLeftBig" />
                   </div>
                   <div class="col-10 noMargin">
-                    <label class="animate__animated animate__bounce animate__delay-1s animate__fadeInLeftBig">Realiza dispersiones masivas de pagos a toda tu n´mina, proveedores o vendedores y agiliza tu proceso de pago.</label>
+                    <label class="animate__animated animate__bounce animate__delay-1s animate__fadeInLeftBig">Realiza dispersiones masivas de pagos a toda tu nómina, proveedores o vendedores y agiliza tu proceso de pago.</label>
                   </div>
 
                   <div class="col-sm-12 d-flex justify-content-center contCvv">
@@ -43,7 +43,7 @@ get_header();
                 </div>
               </div>
               <div class="col-sm-6 justify-content-center ">
-                <img class="celular animate__animated animate__bounce animate__delay-1s animate__fadeInRightBig" src="/wp-content/themes/peibo-child/assets/img/empresas/empresas.png" alt="Peibo" /></div>
+                <img class="celular animate__animated animate__bounce animate__delay-1s animate__fadeInRightBig" src="/wp-content/themes/peibo-child/assets/img/empresas/empresasv2.png" alt="Peibo" /></div>
               </div>
             </div>
           </section>
@@ -147,7 +147,7 @@ get_header();
       <!-- Control the column width, and how they should appear on different devices -->
       <div class="row">
         <div class="col-sm-6" >
-          <img class="" src="/wp-content/themes/peibo-child/assets/img/empresas/Credit_Card_Mockup2.png" width="90%" alt="Peibo" />
+          <img class="" src="/wp-content/themes/peibo-child/assets/img/empresas/Credit_Card_Mockup2v2.png" width="90%" alt="Peibo" />
         </div>
         <div class="col-sm-6" >
           <div class="row">
@@ -201,7 +201,7 @@ get_header();
 
 <div style="padding: 0% !important; margin: 0% !important;">
 <section class="mask2 empresas">
-  <img class="mask2" src="/wp-content/themes/peibo-child/assets/img/empresas/viaje.png" alt="Peibo" />    
+  <div class="maskEmpresas"> </div>
   
         
   <div class="container-fluid d-flex justify-content-left sectionQueremos empresas ">
@@ -228,7 +228,7 @@ get_header();
         </div>
     </div>
   </div>
-  <div class="container-fluid d-flex justify-content-center sectionEresEmp">
+  <!--<div class="container-fluid d-flex justify-content-center sectionEresEmp">
     
     <div class="row container">
       <div class="col-sm-12 d-flex justify-content-center  mt-3" > 
@@ -239,11 +239,11 @@ get_header();
       </div>
         
     </div>
-  </div>
+  </div>-->
 </section>
 </div>
 
-<section  class="container-fluid pt-4 mb-0" id="ContentContacto">
+<section  class="container-fluid pt-4 mb-0 mt-5" id="ContentContacto">
      <!-- Control the column width, and how they should appear on different devices -->
      <div class="row">
           
