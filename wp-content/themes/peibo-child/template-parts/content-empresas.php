@@ -242,9 +242,9 @@ get_header();
                <img src="/wp-content/themes/peibo-child/assets/img/empresas/contactoempresa.png" />
           </div>
           <div class="col-sm-6 contentFrm justify-content-center d-flex">
-               <div class="col-sm-8 justify-content-center d-flex">
+               <div class="col-sm-8 justify-content-center d-flex pt-2">
                     
-                    <form class="mt-5">
+                    <form class="mt-5 pt-5">
                          <div class="form-row">
                               <h2>Contacto</h2>
                          </div>
