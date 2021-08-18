@@ -48,7 +48,7 @@ get_header();
             </div>
           </section>
           <section class="container-fluid d-flex justify-content-center preSection animate__animated animate__bounce animate__delay-3s animate__bounceInUp">
-            <div class="row mt-4 container section2">
+            <div class="row mt-2 mb-2 container section2">
               <div class="col-sm-12">
                 <div class="row">
                   <div class="col-sm-4  columnSection2 empresas">
@@ -57,14 +57,11 @@ get_header();
                         <img class="iconSection animate__animated animate__bounce animate__delay-4s animate__p" src="/wp-content/themes/peibo-child/assets/img/icons/cash.png" alt="Peibo" />
                       </div>
                       <div class="col-sm-12 d-flex justify-content-center  text-center">
-                        <ul class="pl-0">
-                          <li>
+                        <div class="row col-sm-12 d-flex justify-content-center contEm">
                             <h3>Cash Management.</h3>
-                          </li>
-                          <li>
-                            <label>Controla y monitorea tus finanzas desde nuestra aplicación de Cash Management.</label>
-                          </li>
-                        </ul>
+                            <br />
+                          <label>Controla y monitorea tus finanzas desde nuestra aplicación de Cash Management.</label>
+                        </div>
                       </div>
                     </div>
                     
@@ -75,14 +72,11 @@ get_header();
                           <img class="iconSection" src="/wp-content/themes/peibo-child/assets/img/icons/credit.png" alt="Peibo" />
                         </div>
                         <div class="col-sm-12 d-flex justify-content-center text-center">
-                          <ul class="pl-0">
-                            <li>
+                          <div class="row col-sm-12 d-flex justify-content-center contEm">
                               <h3>Tarjeta Nómina.</h3>
-                            </li>
-                            <li>
+                              <br/>
                               <label>Solicita la Tarjeta Nómina y disfruta de todos los beneficios que tiene para tus empleados y para ti. <br/>Realiza transferencias y pagos 24/7.</label>
-                            </li>
-                          </ul>
+                            </div>
                         </div>
                       </div>
                     </div>
@@ -93,14 +87,11 @@ get_header();
                           <img class="iconSection" src="/wp-content/themes/peibo-child/assets/img/icons/ejecutiva.png" alt="Peibo" />
                         </div>
                         <div class="col-sm-12 d-flex justify-content-center  text-center">
-                          <ul class="pl-0">
-                            <li>
+                          <div class="row col-sm-12 d-flex justify-content-center contEm">
                               <h3>Tarjeta Ejecutiva.</h3>
-                            </li>
-                            <li>
+                              <br />
                               <label>Administra los gastos empresariales de tus empleados a través de la Tarjeta Ejecutiva, con la que podrán realizar pagos y disposición de efectivo fácilmente.</label>
-                            </li>
-                          </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -225,7 +216,7 @@ get_header();
             <li>
             Red de Descuentos en renta de autos, hoteles y boletos de avión</li>
           </ul>
-        </div>
+        </div> 
     </div>
   </div>
   <!--<div class="container-fluid d-flex justify-content-center sectionEresEmp">
@@ -243,7 +234,7 @@ get_header();
 </section>
 </div>
 
-<section  class="container-fluid pt-4 mb-0 mt-5" id="ContentContacto">
+<section  class="container-fluid pt-4 mb-0 mt-0" id="ContentContacto">
      <!-- Control the column width, and how they should appear on different devices -->
      <div class="row">
           

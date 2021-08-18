@@ -1405,6 +1405,33 @@ margin: 5% 0%;
   /* estilos desktop */
   @media all and (min-width: 768px) {
 
+     .maskEmpresas{
+
+        background-image:  url("#{$imgR}empresas/viaje.png"),
+                           url("#{$imgR}empresas/viaje.png") !important;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        height: 100%;
+        position: absolute;
+        background-size: 55%;
+        background-position-y: 0%;
+        width: 100%;
+        background-position-x: 140% !important;
+        z-index: 5;
+     }
+
+    .contEm{
+        h3{
+          font-size: 2em;
+          font-family: $sofiaBold;
+          text-align: center;
+        }
+        label{
+          font-size: 1rem;
+          font-family: $sofiaRegular;
+          text-align: center;
+        }
+    }
     .maskTerminos{
       background-image:  url("#{$imgR}curva7.png"),
                          url("#{$imgR}curva7.png") !important;
@@ -1569,7 +1596,7 @@ margin: 5% 0%;
     .section2{
         background: rgba(255, 255, 255, 0.8);
         border-radius: 25px;
-        padding: 7% 1%;
+        padding: 3% 1%;
         -webkit-box-shadow: 0px 1px 25px 4px #b0aeb0;
         box-shadow: 0px 1px 25px 4px #b0aeb0;
         height: 50vh !important;
