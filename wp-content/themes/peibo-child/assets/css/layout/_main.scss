@@ -1748,18 +1748,24 @@ margin: 5% 0%;
           margin-left: -12% !important;
         }
 
-        .maskEmpresas{
-
-          background-image:  url("#{$imgR}empresas/viaje.png"),
-                             url("#{$imgR}empresas/viaje.png") !important;
-          background-color: transparent;
-          background-repeat: no-repeat;
-          height: 60vh;
-          position: absolute;
-          background-size: 45%;
-          background-position-y: 155%;
-          width: 50%;
-          background-position-x: 123% !important;
-       }
+        
 
  }
+
+@media all and (min-width: 1500px) {
+
+
+ .maskEmpresas{
+
+    background-image:  url("#{$imgR}empresas/viaje.png"),
+                       url("#{$imgR}empresas/viaje.png") !important;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 60vh;
+    position: absolute;
+    background-size: 45%;
+    background-position-y: 155%;
+    width: 50%;
+    background-position-x: 123% !important;
+ }
+}

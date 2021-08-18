@@ -3631,7 +3631,8 @@ body.is-preload .bannerInt > .titleInt {
   .listSociales {
     margin-left: -12% !important;
   }
-
+}
+@media all and (min-width: 1500px) {
   .maskEmpresas {
     background-image: url("../img/empresas/viaje.png"), url("../img/empresas/viaje.png") !important;
     background-color: transparent;
